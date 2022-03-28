@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://chat:chat@cluster0.0cjz5.mongodb.net/contact?retryWrites=true&w=majority",
+    "jwtSecret": "jgjkhfjfgfkdjstsawlkladfafda"
+  }
+  
