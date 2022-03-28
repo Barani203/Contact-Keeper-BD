@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const cors = require('cors')
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(
         extended: false
     })
 );
-
+app.use(cors({ credentials: true, origin: '*' }));
 app.get("/", (req, res) =>
     res.json({
         msg: "Welcome to the contact keeper API"
